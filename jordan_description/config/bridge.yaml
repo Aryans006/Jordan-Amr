@@ -4,7 +4,7 @@
   gz_type_name: "gz.msgs.Twist"
   direction: ROS_TO_GZ
 
-- gz_topic_name: "/odom_gz"
+- gz_topic_name: "/odom"
   ros_topic_name: "/odom"
   ros_type_name: "nav_msgs/msg/Odometry"
   gz_type_name: "gz.msgs.Odometry"
@@ -28,7 +28,7 @@
   gz_type_name: "gz.msgs.PointCloudPacked"
   direction: GZ_TO_ROS
 
-- gz_topic_name: "/tf_gz"
+- gz_topic_name: "/tf"
   ros_topic_name: "/tf" 
   ros_type_name: "tf2_msgs/msg/TFMessage"
   gz_type_name: "gz.msgs.Pose_V"

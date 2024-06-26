@@ -170,9 +170,8 @@ Visualization Manager:
           wheel_right_1:
             {}
         map:
-          {}
-        odom:
-          {}
+          odom:
+            {}
       Update Interval: 0
       Value: true
     - Alpha: 0.699999988079071
@@ -199,7 +198,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: base_footprint
+    Fixed Frame: map
     Frame Rate: 30
   Name: root
   Tools:

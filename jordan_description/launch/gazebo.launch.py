@@ -18,7 +18,7 @@ def generate_launch_description():
     #path to xacro file
     xacro_file=get_package_share_directory('jordan_description')+'/urdf/jordan.xacro'
     bridge_config=get_package_share_directory('jordan_description')+'/config/bridge.yaml'
-    world_path= get_package_share_directory("jordan_description")+'/worlds/world.sdf'
+    world_path= get_package_share_directory("jordan_description")+'/worlds/plain.sdf'
     rviz_config= get_package_share_directory("jordan_description")+'/config/jordan.rviz'
     # Include the gazebo.launch.py file
 

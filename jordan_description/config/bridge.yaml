@@ -16,7 +16,7 @@
   gz_type_name: "gz.msgs.Model"
   direction: GZ_TO_ROS
 
-- gz_topic_name: "/laser_scan_gz"
+- gz_topic_name: "/laser_scan"
   ros_topic_name: "/laser_scan"
   ros_type_name: "sensor_msgs/msg/LaserScan"
   gz_type_name: "gz.msgs.LaserScan"

@@ -1,0 +1,11 @@
+# TO establish connection between 
+ros2 run micro_ros_agent micro_ros_agent udp4 --port 8888
+
+# TO establish connection between PC and esp32 over serial
+ros2 run micro_ros_agent micro_ros_agent serial --dev /dev/ttyUSB0
+
+# To troubleshoot serial communication
+lsof /dev/ttyUSB0 # this will show the commmands with PID number
+
+#Release the device:
+kill -9 1234 # replace 1234 with PID number 

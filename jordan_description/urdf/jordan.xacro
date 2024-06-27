@@ -25,6 +25,12 @@
   </collision>
 </link>
 
+<link name="base_footprint">
+</link>
+
+
+
+
 <link name="wheel_left_1">
   <inertial>
     <origin xyz="3.828934417079294e-07 -0.023475397336640502 -3.022445128654516e-07" rpy="0 0 0"/>
@@ -107,5 +113,13 @@
   <parent link="base_link"/>
   <child link="jordan/base_link/gpu_lidar1"/>
 </joint>
+
+<joint name = "base_footprint_joint" type="fixed">
+ <origin xyz="0 0 0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="base_footprint"/>
+</joint>
+
+
 
 </robot>

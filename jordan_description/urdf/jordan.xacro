@@ -4,90 +4,87 @@
 <xacro:include filename="$(find jordan_description)/urdf/materials.xacro" />
 <xacro:include filename="$(find jordan_description)/urdf/jordan.trans" />
 <xacro:include filename="$(find jordan_description)/gazebo/jordan_plugins.gazebo" />
-<link name="base_link">
-  <inertial>
-    <origin xyz="-0.005302226425128791 -0.0022983537829343297 0.09401485302570205" rpy="0 0 0"/>
-    <mass value="24.75013088334115"/>
-    <inertia ixx="0.563455" iyy="0.715606" izz="1.030558" ixy="-0.005287" iyz="0.003318" ixz="0.008679"/>
-  </inertial>
-  <visual>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find jordan_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find jordan_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
 <link name="base_footprint">
 </link>
 
-
-
-
-<link name="wheel_left_1">
+<link name="base_link">
   <inertial>
-    <origin xyz="3.828934417079294e-07 -0.023475397336640502 -3.022445128654516e-07" rpy="0 0 0"/>
-    <mass value="2.2573668510801816"/>
-    <inertia ixx="0.002744" iyy="0.005023" izz="0.002744" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+    <origin xyz="0.047945464475128034 -0.0009508625564958036 0.09401485302570028" rpy="0 0 0"/>
+    <mass value="24.750130883341694"/>
+    <inertia ixx="0.563455" iyy="0.715606" izz="1.030558" ixy="-0.005287" iyz="-0.003318" ixz="-0.008679"/>
   </inertial>
   <visual>
-    <origin xyz="0.000385 0.216178 -0.028568" rpy="0 0 0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find jordan_description)/meshes/wheel_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find jordan_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.000385 0.216178 -0.028568" rpy="0 0 0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find jordan_description)/meshes/wheel_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find jordan_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
 <link name="wheel_right_1">
   <inertial>
-    <origin xyz="1.5484708396193338e-07 0.023474886620335506 -3.02244513264438e-07" rpy="0 0 0"/>
+    <origin xyz="8.320238712583583e-08 -0.023475102959762323 -3.0224451114460593e-07" rpy="0 0 0"/>
     <mass value="2.2573668510801825"/>
-    <inertia ixx="0.002744" iyy="0.005023" izz="0.002744" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+    <inertia ixx="0.002744" iyy="0.005023" izz="0.002744" ixy="0.0" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.000329 -0.216403 -0.028568" rpy="0 0 0"/>
+    <origin xyz="-0.042972 0.219652 -0.028568" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find jordan_description)/meshes/wheel_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.000329 -0.216403 -0.028568" rpy="0 0 0"/>
+    <origin xyz="-0.042972 0.219652 -0.028568" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find jordan_description)/meshes/wheel_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="jordan/base_link/gpu_lidar1">
+<link name="wheel_left_1">
   <inertial>
-    <origin xyz="0.034156087707450974 0.006811411779674115 0.033424133532492684" rpy="0 0 0"/>
-    <mass value="1.2360865195081703"/>
-    <inertia ixx="0.000634" iyy="0.001022" izz="0.001067" ixy="-1e-06" iyz="-0.0" ixz="-0.000132"/>
+    <origin xyz="-1.4485531945468422e-07 0.02347518115214145 -3.02239999090681e-07" rpy="0 0 0"/>
+    <mass value="2.2573668510801816"/>
+    <inertia ixx="0.002744" iyy="0.005023" izz="0.002744" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.125858 0.0 -0.156059" rpy="0 0 3.14"/>
+    <origin xyz="-0.043028 -0.212929 -0.028568" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find jordan_description)/meshes/wheel_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.043028 -0.212929 -0.028568" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find jordan_description)/meshes/wheel_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="jordan/base_link/gpu_lidar1">
+  <inertial>
+    <origin xyz="0.004404150350514752 -0.0001796281189705006 0.03648313353153976" rpy="0 0 0"/>
+    <mass value="1.2360865195081738"/>
+    <inertia ixx="0.000634" iyy="0.001022" izz="0.001067" ixy="-1e-06" iyz="0.0" ixz="0.000132"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.189941 0.001625 -0.153" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find jordan_description)/meshes/Lidar_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.125858 0.003256 -0.156059" rpy="0 0 0"/>
+    <origin xyz="-0.189941 0.001625 -0.153" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find jordan_description)/meshes/Lidar_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -95,21 +92,21 @@
 </link>
 
 <joint name="Revolute 3" type="continuous">
-  <origin xyz="-0.000385 -0.216178 0.028568" rpy="0 0 0"/>
+  <origin xyz="0.042972 -0.219652 0.028568" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="wheel_left_1"/>
-  <axis xyz="0.0 -1.0 0.0"/>
+  <child link="wheel_right_1"/>
+  <axis xyz="0.0 1.0 -0.0"/>
 </joint>
 
 <joint name="Revolute 4" type="continuous">
-  <origin xyz="-0.000329 0.216403 0.028568" rpy="0 0 0"/>
+  <origin xyz="0.043028 0.212929 0.028568" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="wheel_right_1"/>
-  <axis xyz="-0.0 -1.0 -0.0"/>
+  <child link="wheel_left_1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
 </joint>
 
 <joint name="Rigid 6" type="fixed">
-  <origin xyz="-0.125858 -0.003256 0.156059" rpy="0 0 3.14"/>
+  <origin xyz="0.189941 -0.001625 0.153" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="jordan/base_link/gpu_lidar1"/>
 </joint>

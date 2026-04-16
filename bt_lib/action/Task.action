@@ -1,0 +1,8 @@
+
+string command
+---
+
+bool success
+---
+
+float32 progress

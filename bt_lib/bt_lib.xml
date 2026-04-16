@@ -1,0 +1,7 @@
+<library path="bt_lib_node">
+  <class
+    name="TaskAction"
+    type="TaskBTNode"
+    base_class_type="nav2_behavior_tree::BtActionNodeBase">
+  </class>
+</library>
